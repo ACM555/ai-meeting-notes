@@ -1,0 +1,199 @@
+.pricing-page {
+  min-height: 100vh;
+  padding-top: 72px;
+}
+
+.page-header {
+  text-align: center;
+  padding: 80px 24px 40px;
+  background: linear-gradient(180deg, rgba(2, 79, 231, 0.1) 0%, transparent 100%);
+}
+
+.page-header h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(36px, 6vw, 56px);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.page-header p {
+  font-size: 18px;
+  color: #6B7280;
+}
+
+.pricing-content {
+  padding: 40px 24px 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  align-items: stretch;
+}
+
+.pricing-card {
+  text-align: center;
+  position: relative;
+}
+
+.pricing-card.popular {
+  border-color: #024FE7;
+  background: linear-gradient(180deg, rgba(2, 79, 231, 0.1) 0%, rgba(75, 85, 99, 0.2) 100%);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #024FE7, #0D5FE8);
+  color: #fff;
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  z-index: 10;
+}
+
+.pricing-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.price {
+  margin-bottom: 16px;
+}
+
+.price .amount {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #024FE7, #4D8EFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.price .period {
+  font-size: 16px;
+  color: #6B7280;
+}
+
+.pricing-card .description {
+  font-size: 14px;
+  color: #6B7280;
+  margin-bottom: 32px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px;
+  text-align: left;
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #9CA3AF;
+  border-bottom: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+.features-list li:last-child {
+  border-bottom: none;
+}
+
+.features-list li .icon {
+  font-weight: bold;
+  width: 20px;
+}
+
+.features-list li.included .icon {
+  color: #10B981;
+}
+
+.features-list li.not-included {
+  opacity: 0.5;
+}
+
+.features-list li.not-included .icon {
+  color: #EF4444;
+}
+
+.cta-btn {
+  width: 100%;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-btn.primary {
+  background: linear-gradient(135deg, #024FE7, #0D5FE8);
+  color: #fff;
+  border: none;
+  box-shadow: 0 8px 32px rgba(2, 79, 231, 0.4);
+}
+
+.cta-btn.secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #4B5563;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px);
+}
+
+.faq-section {
+  padding: 80px 24px 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 48px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  text-align: left;
+}
+
+.faq-item {
+  padding: 24px;
+  background: rgba(75, 85, 99, 0.15);
+  border-radius: 16px;
+  border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+.faq-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.faq-item p {
+  font-size: 14px;
+  color: #6B7280;
+  line-height: 1.6;
+}

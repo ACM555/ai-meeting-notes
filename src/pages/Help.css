@@ -1,0 +1,148 @@
+.help-page {
+  min-height: 100vh;
+  padding-top: 72px;
+}
+
+.page-header {
+  text-align: center;
+  padding: 80px 24px 40px;
+  background: linear-gradient(180deg, rgba(2, 79, 231, 0.1) 0%, transparent 100%);
+}
+
+.page-header h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(36px, 6vw, 56px);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.page-header p {
+  font-size: 18px;
+  color: #6B7280;
+}
+
+.contact-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.contact-card {
+  height: 100%;
+}
+
+.contact-item {
+  text-align: center;
+  padding: 40px 32px;
+  border-radius: 20px;
+  background: rgba(31, 41, 55, 0.5);
+  border: 1px solid rgba(75, 85, 99, 0.4);
+}
+
+.contact-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.contact-item h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.contact-item > p {
+  font-size: 15px;
+  color: #6B7280;
+  margin-bottom: 24px;
+}
+
+/* WeChat QR Code */
+.qr-code-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.qr-code-img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 2px solid rgba(75, 85, 99, 0.4);
+  padding: 8px;
+  background: #fff;
+}
+
+.qr-hint {
+  font-size: 13px !important;
+  color: #6B7280 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Phone */
+.phone-number {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Space Grotesk', monospace;
+  color: #fff;
+  background: linear-gradient(135deg, rgba(2, 79, 231, 0.2), rgba(77, 142, 255, 0.15));
+  padding: 16px 32px;
+  border-radius: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  letter-spacing: 2px;
+}
+
+.phone-number:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(2, 79, 231, 0.3);
+  color: #4D8EFF;
+}
+
+.contact-hint {
+  font-size: 13px !important;
+  color: #6B7280 !important;
+  margin-top: 12px !important;
+  margin-bottom: 0 !important;
+}
+
+/* Footer note */
+.contact-footer-note {
+  text-align: center;
+  padding: 32px;
+  background: linear-gradient(135deg, rgba(2, 79, 231, 0.1), rgba(75, 85, 99, 0.15));
+  border: 1px solid rgba(2, 79, 231, 0.2);
+  border-radius: 20px;
+}
+
+.contact-footer-note p {
+  font-size: 16px;
+  color: #9CA3AF;
+  line-height: 1.8;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .qr-code-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .phone-number {
+    font-size: 24px;
+  }
+}

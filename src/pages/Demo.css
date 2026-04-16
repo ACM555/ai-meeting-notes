@@ -1,0 +1,118 @@
+.demo-page {
+  min-height: 100vh;
+  padding-top: 72px;
+}
+
+.page-header {
+  text-align: center;
+  padding: 80px 24px 40px;
+  background: linear-gradient(180deg, rgba(2, 79, 231, 0.1) 0%, transparent 100%);
+}
+
+.page-header h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(36px, 6vw, 56px);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.page-header p {
+  font-size: 18px;
+  color: #6B7280;
+}
+
+.demo-content {
+  padding: 40px 24px 100px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.project-card {
+  background: rgba(31, 41, 55, 0.5);
+  border: 1px solid rgba(75, 85, 99, 0.4);
+  border-radius: 24px;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+
+.project-card:hover {
+  border-color: rgba(2, 79, 231, 0.4);
+}
+
+.project-info {
+  padding: 32px;
+}
+
+.project-info h2 {
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.project-desc {
+  font-size: 15px;
+  color: #9CA3AF;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: #4D8EFF;
+  background: rgba(2, 79, 231, 0.12);
+  border: 1px solid rgba(2, 79, 231, 0.25);
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  padding: 0 0 8px 0;
+}
+
+.project-images.multi {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 0 16px 16px;
+}
+
+.project-img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 400px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.project-img:hover {
+  box-shadow: 0 8px 32px rgba(2, 79, 231, 0.2);
+}
+
+@media (max-width: 768px) {
+  .project-images.multi {
+    grid-template-columns: 1fr;
+  }
+
+  .project-info {
+    padding: 24px 20px;
+  }
+}

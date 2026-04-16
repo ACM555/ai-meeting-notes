@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.netlify/
+.workbuddy/
+netlify-deploy.zip
+启动网站.bat

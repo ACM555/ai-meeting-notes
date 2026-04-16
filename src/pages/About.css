@@ -1,0 +1,126 @@
+.about-page {
+  min-height: 100vh;
+  padding-top: 72px;
+}
+
+.page-header {
+  text-align: center;
+  padding: 80px 24px 40px;
+  background: linear-gradient(180deg, rgba(2, 79, 231, 0.1) 0%, transparent 100%);
+}
+
+.page-header h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(36px, 6vw, 56px);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.page-header p {
+  font-size: 18px;
+  color: #6B7280;
+}
+
+.about-content {
+  padding: 40px 24px 100px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-intro {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.about-intro h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.about-intro p {
+  font-size: 16px;
+  color: #9CA3AF;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 16px;
+}
+
+.team-section,
+.tech-section {
+  margin-bottom: 80px;
+}
+
+.team-section h2,
+.tech-section h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.team-grid,
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.team-card {
+  text-align: center;
+  padding: 32px 24px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #024FE7, #0D5FE8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.team-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.team-card .role {
+  font-size: 14px;
+  color: #024FE7;
+  margin-bottom: 12px;
+}
+
+.team-card .desc {
+  font-size: 14px;
+  color: #6B7280;
+}
+
+.tech-card {
+  text-align: center;
+  padding: 32px 24px;
+}
+
+.tech-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.tech-card p {
+  font-size: 14px;
+  color: #6B7280;
+}
