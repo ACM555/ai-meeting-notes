@@ -4,3 +4,4 @@ dist/
 .workbuddy/
 netlify-deploy.zip
 启动网站.bat
+.env
